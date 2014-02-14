@@ -1,0 +1,77 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    activesupport (3.2.16)
+      i18n (~> 0.6, >= 0.6.4)
+      multi_json (~> 1.0)
+    atomic (1.1.14)
+    breakpoint (2.4.1)
+      compass (~> 1.0.0.alpha.13)
+      sass (~> 3.3.0.rc.2)
+      sassy-maps (< 1.0.0)
+    chunky_png (1.2.9)
+    compass (1.0.0.alpha.17)
+      chunky_png (~> 1.2)
+      compass-core (~> 1.0.0.alpha.16)
+      compass-import-once (~> 1.0.1)
+      json
+      listen (~> 1.1.0)
+      sass (~> 3.3.0.rc.1)
+    compass-core (1.0.0.alpha.16)
+      multi_json (~> 1.0)
+      sass (>= 3.3.rc.1)
+    compass-import-once (1.0.2)
+    ffi (1.9.3)
+    i18n (0.6.9)
+    json (1.8.1)
+    kramdown (1.0.1)
+    listen (1.1.6)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+      rb-kqueue (>= 0.2)
+    maruku (0.7.1)
+    multi_json (1.8.4)
+    rack (1.5.2)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
+    rack-test (0.6.2)
+      rack (>= 1.0)
+    rb-fsevent (0.9.4)
+    rb-inotify (0.9.3)
+      ffi (>= 0.5.0)
+    rb-kqueue (0.2.0)
+      ffi (>= 0.5.0)
+    sass (3.3.0.rc.2)
+      listen (~> 1.1.0)
+    sassy-maps (0.3.1)
+      compass (~> 1.0.0.alpha.13)
+      sass (~> 3.3.0.rc.2)
+    serve (1.5.2)
+      activesupport (~> 3.2.12)
+      i18n
+      rack (~> 1.5.2)
+      rack-test (~> 0.6.2)
+      tilt (~> 1.3.3)
+      tzinfo
+    slim (2.0.2)
+      temple (~> 0.6.6)
+      tilt (>= 1.3.3, < 2.1)
+    temple (0.6.7)
+    thread_safe (0.1.3)
+      atomic
+    tilt (1.3.7)
+    tzinfo (1.1.0)
+      thread_safe (~> 0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  breakpoint (~> 2.4.0)
+  compass (~> 1.0.0.alpha.13)
+  kramdown
+  maruku
+  rack-contrib
+  sass (~> 3.3.0.rc.2)
+  serve (= 1.5.2)
+  slim
