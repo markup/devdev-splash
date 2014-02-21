@@ -376,8 +376,575 @@ table {
   border-spacing: 0;
 }
 
+a:link {
+  color: inherit;
+  text-decoration: none;
+  text-decoration: underline;
+}
+a:visited {
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
 html {
-  font-size: 62.5%;
+  font-size: 18px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #00688f;
+  background-color: #ffffdb;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.33333em;
+}
+
+p {
+  width: 85%;
+  max-width: 678px;
+  margin: 1em auto;
+  line-height: 1.3333em;
+}
+
+.larger-type {
+  font-size: 1.5em;
+  line-height: 1.33333em;
+  text-align: center;
+}
+
+.intro {
+  box-sizing: border-box;
+  padding: 1.6em 50px;
+  max-width: 610px;
+}
+
+nav {
+  font-size: 0.66667em;
+  color: #00688f;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 2em 0 0;
+}
+nav ol {
+  list-style: none;
+  display: table;
+  overflow: hidden;
+  *zoom: 1;
+  margin: 0 auto;
+  padding: 0;
+}
+nav li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+nav a {
+  display: block;
+  padding: 2em;
+}
+nav a:link {
+  color: #00688f;
+  text-decoration: none;
+  text-decoration: none;
+}
+nav a:visited {
+  color: #00688f;
+}
+nav a:hover {
+  color: #00688f;
+  text-decoration: underline;
+}
+
+.masthead {
+  background-image: url("/images/background-grid.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.masthead hgroup {
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  -moz-transition: padding-top 0.5s ease;
+  -o-transition: padding-top 0.5s ease;
+  -webkit-transition: padding-top 0.5s ease;
+  transition: padding-top 0.5s ease;
+}
+@media (min-width: 768px) {
+  .masthead hgroup {
+    padding-top: 4.6em;
+  }
+}
+.masthead h1 {
+  color: transparent;
+  text-indent: -100000px;
+  position: relative;
+  overflow: hidden;
+  max-width: 624px;
+  width: 85%;
+  margin: 1.2em auto;
+  background-image: url("/images/DevDevSummerOfCode-Logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.masthead h1 .dummy {
+  width: 100%;
+  height: 0;
+  margin-top: 28.20513%;
+}
+.masthead h1 .dummy-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+.no-svg .masthead h1 {
+  background-image: url("/images/DevDevSummerOfCode-Logo.png");
+}
+.svg .masthead h1 {
+  background-image: url("/images/DevDevSummerOfCode-Logo.svg");
+}
+.masthead h2 {
+  color: #6dcef5;
+  margin: 0;
+}
+
+.application-form {
+  color: #00688f;
+  width: 85%;
+  max-width: 960px;
+  margin: 0 auto;
+  font-size: 14px;
+}
+.application-form *, .application-form *:before, .application-form *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.application-form input[type="text"], .application-form input[type="email"], .application-form input[type="tel"], .application-form input[type="date"], .application-form input[type="number"], .application-form textarea, .application-form select {
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 21px;
+}
+.application-form input[type="text"], .application-form input[type="email"], .application-form input[type="tel"], .application-form input[type="date"], .application-form input[type="number"], .application-form textarea {
+  border: 0;
+  background: transparent;
+  color: #00688f;
+}
+.application-form input[type="text"]::-webkit-input-placeholder, .application-form input[type="email"]::-webkit-input-placeholder, .application-form input[type="tel"]::-webkit-input-placeholder, .application-form input[type="date"]::-webkit-input-placeholder, .application-form input[type="number"]::-webkit-input-placeholder, .application-form textarea::-webkit-input-placeholder {
+  font-weight: 100;
+  color: #aaaaaa;
+}
+.application-form input[type="text"]:-moz-placeholder, .application-form input[type="email"]:-moz-placeholder, .application-form input[type="tel"]:-moz-placeholder, .application-form input[type="date"]:-moz-placeholder, .application-form input[type="number"]:-moz-placeholder, .application-form textarea:-moz-placeholder {
+  font-weight: 100;
+  color: #aaaaaa;
+}
+.application-form input[type="text"]:focus, .application-form input[type="email"]:focus, .application-form input[type="tel"]:focus, .application-form input[type="date"]:focus, .application-form input[type="number"]:focus, .application-form textarea:focus {
+  outline: none;
+  background: white;
+}
+.application-form textarea {
+  height: 4em;
+}
+.application-form fieldset {
+  border: none;
+  padding: 0;
+  margin: 2em 0 0;
+}
+.application-form fieldset legend {
+  border: none;
+  border-bottom: 4px solid #6dcef5;
+  color: #00688f;
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 5px;
+  position: static;
+  width: 100%;
+}
+.application-form fieldset fieldset legend {
+  border-bottom: 2px solid #00688f;
+  font-weight: normal;
+}
+.application-form fieldset fieldset fieldset legend {
+  border-bottom: 1px solid #00688f;
+  font-weight: normal;
+  font-size: 15px;
+}
+.application-form [data-row-span] {
+  border-bottom: 1px solid #6dcef5;
+  width: 100%;
+  zoom: 1;
+}
+.application-form [data-row-span]:before, .application-form [data-row-span]:after {
+  content: "";
+  display: table;
+}
+.application-form [data-row-span]:after {
+  clear: both;
+}
+@media only screen and (min-width: 0) and (max-width: 700px) {
+  .application-form [data-row-span] {
+    border-bottom: none;
+  }
+}
+.application-form [data-row-span] [data-field-span] {
+  padding: 8px;
+  float: left;
+}
+@media only screen and (min-width: 0) and (max-width: 700px) {
+  .application-form [data-row-span] [data-field-span] {
+    border-left: 1px solid #6dcef5;
+    border-right: 1px solid #6dcef5;
+    border-bottom: 1px solid #6dcef5;
+    width: 100% !important;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .application-form [data-row-span] [data-field-span] {
+    display: block;
+  }
+}
+.application-form [data-row-span] [data-field-span] label:first-child {
+  margin-top: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 10px;
+  color: #00688f;
+  display: block;
+  margin-bottom: 4px;
+}
+.application-form [data-row-span] [data-field-span] label:first-child:hover {
+  cursor: text;
+}
+.application-form [data-row-span] [data-field-span]:first-child {
+  border-left: 1px solid #6dcef5;
+}
+.application-form [data-row-span] [data-field-span]:last-child {
+  border-right: 1px solid #6dcef5;
+}
+.application-form [data-row-span] [data-field-span].focus {
+  background: white;
+}
+.application-form [data-row-span] [data-field-span].focus label {
+  color: #005576;
+}
+.application-form [data-row-span] [data-field-span]:hover {
+  background: white;
+  cursor: text;
+}
+.application-form [data-row-span="1"] > [data-field-span="1"] {
+  width: 100%;
+}
+.application-form [data-row-span="2"] > [data-field-span="1"] {
+  width: 50%;
+}
+.application-form [data-row-span="2"] > [data-field-span="2"] {
+  width: 100%;
+}
+.application-form [data-row-span="3"] > [data-field-span="1"] {
+  width: 33.33333%;
+}
+.application-form [data-row-span="3"] > [data-field-span="2"] {
+  width: 66.66667%;
+}
+.application-form [data-row-span="3"] > [data-field-span="3"] {
+  width: 100%;
+}
+.application-form [data-row-span="4"] > [data-field-span="1"] {
+  width: 25%;
+}
+.application-form [data-row-span="4"] > [data-field-span="2"] {
+  width: 50%;
+}
+.application-form [data-row-span="4"] > [data-field-span="3"] {
+  width: 75%;
+}
+.application-form [data-row-span="4"] > [data-field-span="4"] {
+  width: 100%;
+}
+.application-form [data-row-span="5"] > [data-field-span="1"] {
+  width: 20%;
+}
+.application-form [data-row-span="5"] > [data-field-span="2"] {
+  width: 40%;
+}
+.application-form [data-row-span="5"] > [data-field-span="3"] {
+  width: 60%;
+}
+.application-form [data-row-span="5"] > [data-field-span="4"] {
+  width: 80%;
+}
+.application-form [data-row-span="5"] > [data-field-span="5"] {
+  width: 100%;
+}
+.application-form [data-row-span="6"] > [data-field-span="1"] {
+  width: 16.66667%;
+}
+.application-form [data-row-span="6"] > [data-field-span="2"] {
+  width: 33.33333%;
+}
+.application-form [data-row-span="6"] > [data-field-span="3"] {
+  width: 50%;
+}
+.application-form [data-row-span="6"] > [data-field-span="4"] {
+  width: 66.66667%;
+}
+.application-form [data-row-span="6"] > [data-field-span="5"] {
+  width: 83.33333%;
+}
+.application-form [data-row-span="6"] > [data-field-span="6"] {
+  width: 100%;
+}
+.application-form [data-row-span="7"] > [data-field-span="1"] {
+  width: 14.28571%;
+}
+.application-form [data-row-span="7"] > [data-field-span="2"] {
+  width: 28.57143%;
+}
+.application-form [data-row-span="7"] > [data-field-span="3"] {
+  width: 42.85714%;
+}
+.application-form [data-row-span="7"] > [data-field-span="4"] {
+  width: 57.14286%;
+}
+.application-form [data-row-span="7"] > [data-field-span="5"] {
+  width: 71.42857%;
+}
+.application-form [data-row-span="7"] > [data-field-span="6"] {
+  width: 85.71429%;
+}
+.application-form [data-row-span="7"] > [data-field-span="7"] {
+  width: 100%;
+}
+.application-form [data-row-span="8"] > [data-field-span="1"] {
+  width: 12.5%;
+}
+.application-form [data-row-span="8"] > [data-field-span="2"] {
+  width: 25%;
+}
+.application-form [data-row-span="8"] > [data-field-span="3"] {
+  width: 37.5%;
+}
+.application-form [data-row-span="8"] > [data-field-span="4"] {
+  width: 50%;
+}
+.application-form [data-row-span="8"] > [data-field-span="5"] {
+  width: 62.5%;
+}
+.application-form [data-row-span="8"] > [data-field-span="6"] {
+  width: 75%;
+}
+.application-form [data-row-span="8"] > [data-field-span="7"] {
+  width: 87.5%;
+}
+.application-form [data-row-span="8"] > [data-field-span="8"] {
+  width: 100%;
+}
+.application-form [data-row-span="9"] > [data-field-span="1"] {
+  width: 11.11111%;
+}
+.application-form [data-row-span="9"] > [data-field-span="2"] {
+  width: 22.22222%;
+}
+.application-form [data-row-span="9"] > [data-field-span="3"] {
+  width: 33.33333%;
+}
+.application-form [data-row-span="9"] > [data-field-span="4"] {
+  width: 44.44444%;
+}
+.application-form [data-row-span="9"] > [data-field-span="5"] {
+  width: 55.55556%;
+}
+.application-form [data-row-span="9"] > [data-field-span="6"] {
+  width: 66.66667%;
+}
+.application-form [data-row-span="9"] > [data-field-span="7"] {
+  width: 77.77778%;
+}
+.application-form [data-row-span="9"] > [data-field-span="8"] {
+  width: 88.88889%;
+}
+.application-form [data-row-span="9"] > [data-field-span="9"] {
+  width: 100%;
+}
+.application-form [data-row-span="10"] > [data-field-span="1"] {
+  width: 10%;
+}
+.application-form [data-row-span="10"] > [data-field-span="2"] {
+  width: 20%;
+}
+.application-form [data-row-span="10"] > [data-field-span="3"] {
+  width: 30%;
+}
+.application-form [data-row-span="10"] > [data-field-span="4"] {
+  width: 40%;
+}
+.application-form [data-row-span="10"] > [data-field-span="5"] {
+  width: 50%;
+}
+.application-form [data-row-span="10"] > [data-field-span="6"] {
+  width: 60%;
+}
+.application-form [data-row-span="10"] > [data-field-span="7"] {
+  width: 70%;
+}
+.application-form [data-row-span="10"] > [data-field-span="8"] {
+  width: 80%;
+}
+.application-form [data-row-span="10"] > [data-field-span="9"] {
+  width: 90%;
+}
+.application-form [data-row-span="10"] > [data-field-span="10"] {
+  width: 100%;
+}
+.application-form [data-row-span="11"] > [data-field-span="1"] {
+  width: 9.09091%;
+}
+.application-form [data-row-span="11"] > [data-field-span="2"] {
+  width: 18.18182%;
+}
+.application-form [data-row-span="11"] > [data-field-span="3"] {
+  width: 27.27273%;
+}
+.application-form [data-row-span="11"] > [data-field-span="4"] {
+  width: 36.36364%;
+}
+.application-form [data-row-span="11"] > [data-field-span="5"] {
+  width: 45.45455%;
+}
+.application-form [data-row-span="11"] > [data-field-span="6"] {
+  width: 54.54545%;
+}
+.application-form [data-row-span="11"] > [data-field-span="7"] {
+  width: 63.63636%;
+}
+.application-form [data-row-span="11"] > [data-field-span="8"] {
+  width: 72.72727%;
+}
+.application-form [data-row-span="11"] > [data-field-span="9"] {
+  width: 81.81818%;
+}
+.application-form [data-row-span="11"] > [data-field-span="10"] {
+  width: 90.90909%;
+}
+.application-form [data-row-span="11"] > [data-field-span="11"] {
+  width: 100%;
+}
+.application-form [data-row-span="12"] > [data-field-span="1"] {
+  width: 8.33333%;
+}
+.application-form [data-row-span="12"] > [data-field-span="2"] {
+  width: 16.66667%;
+}
+.application-form [data-row-span="12"] > [data-field-span="3"] {
+  width: 25%;
+}
+.application-form [data-row-span="12"] > [data-field-span="4"] {
+  width: 33.33333%;
+}
+.application-form [data-row-span="12"] > [data-field-span="5"] {
+  width: 41.66667%;
+}
+.application-form [data-row-span="12"] > [data-field-span="6"] {
+  width: 50%;
+}
+.application-form [data-row-span="12"] > [data-field-span="7"] {
+  width: 58.33333%;
+}
+.application-form [data-row-span="12"] > [data-field-span="8"] {
+  width: 66.66667%;
+}
+.application-form [data-row-span="12"] > [data-field-span="9"] {
+  width: 75%;
+}
+.application-form [data-row-span="12"] > [data-field-span="10"] {
+  width: 83.33333%;
+}
+.application-form [data-row-span="12"] > [data-field-span="11"] {
+  width: 91.66667%;
+}
+.application-form [data-row-span="12"] > [data-field-span="12"] {
+  width: 100%;
+}
+
+body {
+  background-image: url("/images/background-gradient-pixelated.png");
+  background-repeat: repeat-x;
+  background-position: top center;
+}
+
+section {
+  position: relative;
+}
+
+.hexagon {
+  background-position: center -11px;
+  padding: 11px 15%;
+  color: white;
+}
+.hexagon.complementary {
+  background-color: #00688f;
+  background-image: url("/images/background-complementary.png");
+}
+.hexagon.highlight {
+  background-color: #c9005c;
+  background-image: url("/images/background-highlight.png");
+}
+.hexagon hr {
+  position: absolute;
+  left: 0;
+  height: 12px;
+  width: 100%;
+  margin: 0;
+  border: none;
+  background-repeat: repeat-x;
+  background-position: center top;
+}
+.hexagon hr.before {
+  background-image: url("/images/hr-before.png");
+  top: 0;
+}
+.hexagon hr.after {
+  background-image: url("/images/hr-after.png");
+  bottom: 0;
+}
+.hexagon hr.special {
+  background-image: url("/images/hr-special.png");
+  top: 0;
+  height: 22px;
+  margin-top: -11px;
+}
+
+.call-to-action {
+  position: relative;
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+  padding: 0.8em;
+}
+.call-to-action:link {
+  color: white;
+  text-decoration: none;
+  text-decoration: none;
+}
+.call-to-action:visited {
+  color: white;
+}
+.call-to-action:hover {
+  color: white;
+  text-decoration: underline;
 }

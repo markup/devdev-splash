@@ -4,7 +4,54 @@
 @import "breakpoint"
 @import "modules/all"
 
-html
-  font-size: 62.5%
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
+@import "partials/navigation"
+@import "partials/masthead"
+@import "partials/forms"
+
+body
+  background-image: url("/images/background-gradient-pixelated.png")
+  background-repeat: repeat-x
+  background-position: top center
+
+section
+  position: relative
+
+.hexagon
+  background-position: center -11px
+  padding: 11px 15%
+  color: #fff
+  &.complementary
+    background-color: $complementary-dark
+    background-image: url("/images/background-complementary.png")
+  &.highlight
+    background-color: $highlight
+    background-image: url("/images/background-highlight.png")
+  hr
+    position: absolute
+    left: 0
+    height: 12px
+    width: 100%
+    margin: 0
+    border: none
+    background-repeat: repeat-x
+    background-position: center top
+    &.before
+      background-image: url("/images/hr-before.png")
+      top: 0
+    &.after
+      background-image: url("/images/hr-after.png")
+      bottom: 0
+    &.special
+      background-image: url("/images/hr-special.png")
+      top: 0
+      height: 22px
+      margin-top: -11px
+
+.call-to-action
+  position: relative
+  display: block
+  +basic-link(#fff, "plain")
+  font-weight: bold
+  text-align: center
+  font-size: 2em
+  padding: 0.8em

@@ -1,0 +1,28 @@
+.masthead
+  background-image: url("/images/background-grid.png")
+  background-repeat: no-repeat
+  background-position: top center
+  hgroup
+    text-align: center
+    padding-top: 1em
+    padding-bottom: 2em
+    +transition(padding-top 0.5s ease)
+    +breakpoint($tablet-p)
+      padding-top: 4.6em
+  h1
+    color: transparent
+    text-indent: -100000px
+    +proportional-magic(28.205128205128%)
+    max-width: 624px
+    width: 85%
+    margin: 1.2em auto
+    background-image: url("/images/DevDevSummerOfCode-Logo.png")
+    background-size: contain
+    background-repeat: no-repeat
+    .no-svg &
+      background-image: url("/images/DevDevSummerOfCode-Logo.png")
+    .svg &
+      background-image: url("/images/DevDevSummerOfCode-Logo.svg")
+  h2
+    color: $complementary-light
+    margin: 0

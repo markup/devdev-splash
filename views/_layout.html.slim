@@ -1,8 +1,10 @@
 doctype html
-html
+html lang="en"
   head
     == render "/partials/document_head"
 body
   == render "/partials/site_header"
   == yield
   == render "/partials/site_navigation", :locals => { :placement => "bottom" }
+  script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+  script src="/javascripts/gridforms.js"

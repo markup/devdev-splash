@@ -1,48 +1,63 @@
-markdown:
-  [Apply For the 2014 Session Now!](#apply){: .call-to-action}
+a.hexagon.highlight.call-to-action href="#apply"
+  hr.before
+  | Apply For the 2014 Session Now!
+  hr.after
 
-  {: .larger-type} A coding and design summer program for kids between 12 and 18 years old living in the Chattanooga, Tennessee area.
+p.larger-type.intro A coding and design summer program for kids between 12 and 18 years old living in the Chattanooga, Tennessee area.
 
-section#about.about
+section#about-devdev.about-devdev.hexagon.complementary
+  hr.before
   markdown:
     ## About Dev Dev: Summer of Code
     {: .larger-type} The **Summer of Code** program is divided into four units, each one focused on a specific technology. This year, they are preceded by an optional unit led by [Bridge Innovate](#).
 
-  article#design-thinking.design-thinking
-    hgroup
-      h2
-        ' Unit 0
-        small \(Bonus unit led by [Bridge Innovate](#))
-      h1 Design Thinking Workshop
-    p This optional pre-camp workshop offers a design thinking primer to interested students. The workshop will focus on the fundamental elements of design thinking based on IDEO’s Design Thinking methodology.
-
   article#html.html
     hgroup
-      h2 Unit 1
-      h1 HTML
+      h4 Unit 1
+      h3 HTML
     p The first unit focuses on Hypertext Markup Language (HTML), the most important language of the web. HTML helps shape our content, expose its meaning, and make it accessible to any device. Summer of Code students will learn the basics of HTML, with a focus on semantic markup.
 
   article#css.css
     hgroup
-      h2 Unit 2
-      h1 CSS
+      h4 Unit 2
+      h3 CSS
     p Another unit is dedicated to Cascading Style Sheets (CSS). CSS allows us to style our content, further enhancing its meaning through layout, color, and typography. Students will gain the skills necessary to apply styles to their HTML and make their websites both attractive and easier to navigate.
 
   article#javascript.javascript
     hgroup
-      h2 Unit 3
-      h1 Javascript
+      h4 Unit 3
+      h3 Javascript
     p This unit introduces students to Javascript. Javascript is a programming language that allows developers to manipulate data on the browser, including the HTML and CSS already loaded on the page. This opens up a world of interactive possibilities and is the foundation for web applications.
 
   article#robotics.robotics
     hgroup
-      h2 Unit 4
-      h1 Robotics
+      h4 Unit 4
+      h3 Robotics
     p The final unit of Summer of Code focuses on Robotics. Students will get a crash course on this topic using Arduino.
 
   markdown:
     ## Summer of Code Schedule
     {: .larger-type} Camp students will be divided into morning and afternoon sessions held Monday, Wednesday and Friday. They will be sorted by age group, and we will let you know which session you belong to once applications are closed. Also keep in mind that we will observe the July 4<sup>th</sup> holiday. A full schedule will be published as soon as it’s available.
+
+section#about-design-thinking.about-design-thinking.hexagon.highlight
+  hr.special
+  markdown:
+    ## But Wait… There’s More!
+    {: .larger-type} This year, we’re partnering with [Bridge Innovate](#) to offer a pre-Summer of Code workshop on design thinking.
+
+  article#design-thinking.design-thinking
+    hgroup
+      h4
+        ' Unit 0
+        small
+          | (Bonus unit led by [Bridge Innovate](#))
+      h3 Design Thinking Workshop
+    p This optional pre-camp workshop offers a design thinking primer to interested students. The workshop will focus on the fundamental elements of design thinking based on IDEO’s Design Thinking methodology.
+
+  markdown:
+    {: .larger-type} This unit will be carried out on a different schedule. It will be held from **Monday through Friday** (yes, each of the five days) on the week of **June 23 – 27**. You don’t have to apply to Summer of Code to apply to this workshop!
+
+  hr.after
 
 section#apply.apply
   h2 Apply for Admission
@@ -51,7 +66,8 @@ section#apply.apply
     fieldset#course-selection.course-selection
       legend
         ' Tell us which program you’re applying for.
-        small \(You can choose either one, or both.)
+        small
+          | (You can choose either one, or both.)
       label.highlighted-checkbox
         input type="checkbox" name="summer-of-code" id="summer-of-code"
         | Dev Dev: Summer of Code
@@ -63,71 +79,71 @@ section#apply.apply
     fieldset#student-info.student-info
       legend Tell us about yourself.
       
-      div data-row-span="5"
-        div data-field-span="2"
+      div data-row-span="8"
+        div data-field-span="3"
           label for="student-name-first" Your first name
           input type="text" name="student-name-first" id="student-name-first"
-        div data-field-span="3"
+        div data-field-span="5"
           label for="student-name-last" Your last name
           input type="text" name="student-name-last" id="student-name-last"
 
-      div data-row-span="5"
-        div data-field-span="2"
+      div data-row-span="8"
+        div data-field-span="3"
           label for="student-email" Your e-mail
           input type="email" name="student-email" id="student-email" placeholder="name@domain.com"
-        div data-field-span="2"
+        div data-field-span="3"
           label for="student-phone" Your phone number
           input type="tel" name="student-phone" id="student-phone" placeholder="423-555-4321"
-        div data-field-span="1"
+        div data-field-span="2"
           label for="student-dob" Your date of birth
-          input type="date" name="student-dob" id="student-dob" min="1996-01-01" max="2002-12-31" placeholder="MM/DD/YYYY"
+          input type="date" name="student-dob" id="student-dob" min="1996-01-01" max="2002-12-31"
 
       div data-row-span="1"
         div data-field-span="1"
           label for="student-address-street" Your street address
           input type="text" name="student-address-street" id="student-address-street" placeholder="7890 Willow Rd, Apt 6"
 
-      div data-row-span="5"
-        div data-field-span="2"
+      div data-row-span="8"
+        div data-field-span="3"
           label for="student-address-city" Your city
           input type="text" name="student-address-city" id="student-address-city" placeholder="Chattanooga" value="Chattanooga"
-        div data-field-span="2"
+        div data-field-span="3"
           label for="student-address-state" Your state
           input type="text" name="student-address-state" id="student-address-state" placeholder="Tennessee" value="Tennessee"
-        div data-field-span="1"
+        div data-field-span="2"
           label for="student-address-zip" Your zip code
-          input type="number" name="student-address-zip" id="student-address-zip" placeholder="37402"
+          input type="text" name="student-address-zip" id="student-address-zip" placeholder="37402"
 
     fieldset#guardian-info.guardian-info
       legend Tell us about your parent or guardian.
 
-      div data-row-span="5"
-        div data-field-span="2"
+      div data-row-span="8"
+        div data-field-span="3"
           label for="guardian-name-first" Parent/guardian first name
           input type="text" name="guardian-name-first" id="guardian-name-first"
-        div data-field-span="3"
+        div data-field-span="5"
           label for="guardian-name-last" Parent/guardian last name
           input type="text" name="guardian-name-last" id="guardian-name-last"
 
-      div data-row-span="5"
-        div data-field-span="2"
+      div data-row-span="8"
+        div data-field-span="3"
           label for="guardian-email" Parent/guardian e-mail
           input type="email" name="guardian-email" id="guardian-email" placeholder="name@domain.com"
-        div data-field-span="3"
+        div data-field-span="5"
           label for="guardian-phone" Parent/guardian phone
           input type="tel" name="guardian-phone" id="guardian-phone" placeholder="423-555-4321"
 
     fieldset#school-info.school-info
       legend Tell us about your school.
 
-      div data-row-span="5"
-        div data-field-span="2"
+      div data-row-span="8"
+        div data-field-span="3"
           label for="school-type" School type
           select
             option value="public" Public School
             option value="private" Private School
             option value="homeschool" Homeschool
-        div data-field-span="3"
+        div data-field-span="5"
           label for="school-attendance" Attendance type
           label for="school-attendance-zoned"
             input type="radio" name="school-attendance" id="school-attendance-zoned" value="zoned"
@@ -141,11 +157,11 @@ section#apply.apply
           label for="school-name" School name
           input type="text" name="school-name" id="school-name" placeholder="John H. Smith Middle School"
 
-      div data-row-span="5"
-        div data-field-span="2"
+      div data-row-span="8"
+        div data-field-span="3"
           label for="school-gpa" Grade Point Average
           input type="number" name="school-gpa" id="school-gpa" placeholder="3.48"
-        div data-field-span="3"
+        div data-field-span="5"
           label for="school-algebra-passed" Have you passed Algebra 1?
           label for="school-algebra-passed-yes"
             input type="radio" name="school-algebra-passed" id="school-algebra-passed-yes" value="yes"
@@ -169,7 +185,9 @@ section#apply.apply
 
     input type="submit" name="submit-application-form" id="submit-application-form" value="Submit my application"
 
-section#contact.contact
+section#contact.contact.hexagon.complementary
+  hr.before
+
   h2 Have questions? Contact Us!
 
   form#contact-form.contact-form
@@ -183,6 +201,8 @@ section#contact.contact
     textarea name="contact-message" id="contact-message"
 
     input type="submit" name="submit-contact-form" id="submit-contact-form" value="Send Message"
+
+  hr.after
 
 section#about-devdev.about-devdev
   markdown:
