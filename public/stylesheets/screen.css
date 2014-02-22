@@ -880,10 +880,43 @@ nav a:hover {
   width: 100%;
 }
 
+input[type="radio"] {
+  margin: 0 0.3em 0 1.2em;
+}
+
+.ui-helper-hidden-accessible {
+  display: none;
+}
+
+.ui-autocomplete {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  width: 70%;
+  border: 1px solid #6dcef5;
+  border-top: 4px solid #6dcef5;
+  border-bottom: none;
+}
+.ui-autocomplete li {
+  margin: 0;
+  padding: 0;
+}
+.ui-autocomplete a {
+  display: block;
+  padding: 0.4em;
+  cursor: pointer;
+  border-bottom: 1px solid #6dcef5;
+}
+.ui-autocomplete a:hover {
+  color: white;
+  background-color: #6dcef5;
+}
+
 body {
   background-image: url("/images/background-gradient-pixelated.png");
   background-repeat: repeat-x;
-  background-position: top center;
+  background-position: center -186px;
 }
 
 section {
