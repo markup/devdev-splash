@@ -932,10 +932,12 @@ section {
 .hexagon.complementary {
   background-color: #00688f;
   background-image: url("/images/background-complementary.png");
+  text-shadow: 0 1px 1px #003043;
 }
 .hexagon.highlight {
   background-color: #c9005c;
   background-image: url("/images/background-highlight.png");
+  text-shadow: 0 1px 1px #6d0032;
 }
 .hexagon hr {
   position: absolute;
