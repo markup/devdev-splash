@@ -414,7 +414,7 @@ p {
 }
 
 .larger-type {
-  font-size: 1.5em;
+  font-size: 1.33333em;
   line-height: 1.33333em;
   text-align: center;
 }
@@ -474,6 +474,7 @@ nav a:hover {
   text-align: center;
   padding-top: 1em;
   padding-bottom: 2em;
+  position: relative;
   -moz-transition: padding-top 0.5s ease;
   -o-transition: padding-top 0.5s ease;
   -webkit-transition: padding-top 0.5s ease;
