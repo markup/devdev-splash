@@ -885,6 +885,19 @@ input[type="radio"] {
   margin: 0 0.3em 0 1.2em;
 }
 
+div, input, textarea {
+  -moz-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+div:hover, input:hover, textarea:hover {
+  -moz-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+
 .ui-helper-hidden-accessible {
   display: none;
 }
@@ -924,15 +937,32 @@ fieldset.course-selection small {
 }
 fieldset.course-selection label {
   display: block;
-  font-size: 1.4em;
-  font-weight: bold;
-  padding: 0.6em 0.8em 0.5em 36px;
   border-radius: 2px;
-  background-color: #6dcef5;
+  padding: 1em;
+  text-align: center;
   color: white;
-  cursor: pointer;
-  margin: 0 0 1em;
-  text-indent: -22px;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #6dcef5;
+  border: 2px solid #6dcef5;
+  margin: 1em 0;
+  text-shadow: 0 1px 1px #0e91c6;
+  -webkit-font-smoothing: antialiased;
+  -moz-transition: border 0.3s ease;
+  -o-transition: border 0.3s ease;
+  -webkit-transition: border 0.3s ease;
+  transition: border 0.3s ease;
+  text-align: left;
+}
+fieldset.course-selection label:hover, fieldset.course-selection label:focus {
+  border: 2px solid #0e91c6;
+  outline: none;
+}
+fieldset.course-selection label small {
+  font-size: 0.85em;
+  color: #00688f;
+  font-style: italic;
+  text-shadow: none;
 }
 @media (min-width: 700px) {
   fieldset.course-selection label.left {
@@ -948,6 +978,36 @@ fieldset.course-selection input {
   margin-right: 0.4em;
 }
 
+input[type="submit"] {
+  display: block;
+  border-radius: 2px;
+  padding: 1em;
+  text-align: center;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #6dcef5;
+  border: 2px solid #6dcef5;
+  margin: 1em 0;
+  text-shadow: 0 1px 1px #0e91c6;
+  -webkit-font-smoothing: antialiased;
+  -moz-transition: border 0.3s ease;
+  -o-transition: border 0.3s ease;
+  -webkit-transition: border 0.3s ease;
+  transition: border 0.3s ease;
+  width: 100%;
+}
+input[type="submit"]:hover, input[type="submit"]:focus {
+  border: 2px solid #0e91c6;
+  outline: none;
+}
+input[type="submit"] small {
+  font-size: 0.85em;
+  color: #00688f;
+  font-style: italic;
+  text-shadow: none;
+}
+
 body {
   background-image: url("/images/background-gradient-pixelated.png");
   background-repeat: repeat-x;
@@ -960,7 +1020,7 @@ section {
 
 .hexagon {
   background-position: center -11px;
-  padding: 11px 15%;
+  padding: 11px 7.5%;
   color: white;
 }
 .hexagon.complementary {

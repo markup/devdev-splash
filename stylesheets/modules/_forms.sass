@@ -1,13 +1,22 @@
-mixin button($bg: $complementary-light, $sm: $complementary-dark)
+@mixin button($bg: $complementary-light, $sm: $complementary-dark)
   display: block
   border-radius: 2px
   padding: 1em
   text-align: center
   color: #fff
+  font-size: 1.2em
   font-weight: bold
   background-color: $bg
+  border: 2px solid $bg
+  margin: 1em 0
+  text-shadow: 0 1px 1px darken($bg, 28%)
+  -webkit-font-smoothing: antialiased
+  +transition(border 0.3s ease)
+  &:hover, &:focus
+    border: 2px solid darken($bg, 28%)
+    outline: none
   small
     font-size: 0.85em
     color: $sm
     font-style: italic
-    letter-spacing: 1px
+    text-shadow: none
