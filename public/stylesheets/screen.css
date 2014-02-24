@@ -914,6 +914,40 @@ input[type="radio"] {
   background-color: #6dcef5;
 }
 
+fieldset.course-selection legend {
+  border-bottom: none;
+}
+fieldset.course-selection small {
+  font-weight: normal;
+  font-style: italic;
+  color: #00688f;
+}
+fieldset.course-selection label {
+  display: block;
+  font-size: 1.4em;
+  font-weight: bold;
+  padding: 0.6em 0.8em 0.5em 36px;
+  border-radius: 2px;
+  background-color: #6dcef5;
+  color: white;
+  cursor: pointer;
+  margin: 0 0 1em;
+  text-indent: -22px;
+}
+@media (min-width: 700px) {
+  fieldset.course-selection label.left {
+    width: 39%;
+    float: left;
+  }
+  fieldset.course-selection label.right {
+    width: 58%;
+    float: right;
+  }
+}
+fieldset.course-selection input {
+  margin-right: 0.4em;
+}
+
 body {
   background-image: url("/images/background-gradient-pixelated.png");
   background-repeat: repeat-x;

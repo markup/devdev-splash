@@ -32,3 +32,32 @@ input[type="radio"]
     &:hover
       color: #fff
       background-color: $complementary-light
+
+fieldset.course-selection
+  legend
+    border-bottom: none
+  small
+    // font-size: inherit
+    font-weight: normal
+    font-style: italic
+    color: $complementary-dark
+  label
+    display: block
+    font-size: 1.4em
+    font-weight: bold
+    padding: 0.6em 0.8em 0.5em 36px
+    border-radius: 2px
+    background-color: $complementary-light
+    color: #fff
+    cursor: pointer
+    margin: 0 0 1em
+    text-indent: -22px
+    +breakpoint(700px)
+      &.left
+        width: 39%
+        float: left
+      &.right
+        width: 58%
+        float: right
+  input
+    margin-right: 0.4em
