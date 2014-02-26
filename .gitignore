@@ -19,6 +19,7 @@ coverage
 rdoc
 pkg
 public/stylesheets
+html
 
 ## PROJECT::SPECIFIC
 *.gem
