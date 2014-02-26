@@ -9,19 +9,40 @@ body
   script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
   script src="/javascripts/jquery-ui-1.10.4.custom.min.js"
   script src="/javascripts/gridforms.js"
-  script src="/javascripts/complete.ly.1.0.1.min.js"
-  script src="/javascripts/stellar.js"
+  script src="/javascripts/tweenmax.min.js"
+  script src="/javascripts/jquery.superscrollorama.js"
+  script src="/javascripts/jquery.smooth-scroll.js"
   javascript:
-    $.stellar();
     $(function() {
       var schools = ['Battle Academy', 'Brown Middle Academy', 'Center for Creative Arts', 'Chattanooga School for the Arts and Sciences', 'Chattanooga School for the Liberal Arts', 'East Hamilton High School', 'East Hamilton Middle School', 'East Ridge Middle School', 'Girls Preparatory School', 'Hixson High School', 'Lakeview High School', 'Loftis Middle School', 'Normal Park Museum Magnet', 'Red Bank Middle School', 'Signal Mountain High School', 'Signal Mountain Middle School', 'Soddy Daisy High School', 'St. Jude Catholic School', 'STEM High School', 'Tyner Middle Academy', 'Walker Valley High School'];
       $("#school-name").autocomplete({
         source: schools,
         minLength: 3
       });
+      $(".scroll").smoothScroll({offset: -24});
+      var scrollo = $.superscrollorama({
+        triggerAtCenter: false,
+        playoutAnimations: true
+      });
+      var about = $("#about-summer-of-code");
+      // .addTween(target, tween, duration, offset, reverse)
+      scrollo.addTween(about,
+        TweenMax.from(about, 0.5, 
+          {css: {
+            top: 250
+          }
+        }),
+        600, -800
+      );
+      var thinking = $("#about-design-thinking");
+      // .addTween(target, tween, duration, offset, reverse)
+      scrollo.addTween(thinking,
+        TweenMax.from(thinking, 1, 
+          {css: {
+            opacity: 0,
+            top: 150
+          }
+        }),
+        0, -800, false
+      );
     });
-  / var c = completely(document.getElementById('school-name-container'), {
-  /   backgroundColor = rgba(255,255,255,0),
-  / });
-  / c.options = ['Battle Academy', 'Brown Middle Academy', 'Center for Creative Arts', 'Chattanooga School for the Arts and Sciences', 'Chattanooga School for the Liberal Arts', 'East Hamilton High School', 'East Hamilton Middle School', 'East Ridge Middle School', 'Girls Preparatory School', 'Hixson High School', 'Lakeview High School', 'Loftis Middle School', 'Normal Park Museum Magnet', 'Red Bank Middle School', 'Signal Mountain High School', 'Signal Mountain Middle School', 'Soddy Daisy High School', 'St. Jude Catholic School', 'STEM High School', 'Tyner Middle Academy', 'Walker Valley High School'];
-  / c.startFrom = 3;
