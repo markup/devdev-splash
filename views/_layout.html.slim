@@ -24,16 +24,16 @@ body
         triggerAtCenter: false,
         playoutAnimations: true
       });
-      var about = $("#about-summer-of-code");
+      // var about = $("#about-summer-of-code");
       // .addTween(target, tween, duration, offset, reverse)
-      scrollo.addTween(about,
-        TweenMax.from(about, 0.5, 
-          {css: {
-            top: 250
-          }
-        }),
-        600, -800
-      );
+      // scrollo.addTween(about,
+      //   TweenMax.from(about, 0.5, 
+      //     {css: {
+      //       top: 250
+      //     }
+      //   }),
+      //   2000, -800, false
+      // );
       var thinking = $("#about-design-thinking");
       // .addTween(target, tween, duration, offset, reverse)
       scrollo.addTween(thinking,
@@ -41,6 +41,17 @@ body
           {css: {
             opacity: 0,
             top: 150
+          }
+        }),
+        0, -800, false
+      );
+      var apply = $("#apply");
+      // .addTween(target, tween, duration, offset, reverse)
+      scrollo.addTween(apply,
+        TweenMax.from(apply, 0.5, 
+          {css: {
+            opacity: 0,
+            scale: 0.95
           }
         }),
         0, -800, false
