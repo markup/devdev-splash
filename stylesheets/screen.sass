@@ -58,8 +58,13 @@ section
   +basic-link(#fff, "plain")
   font-weight: bold
   text-align: center
-  font-size: 2em
-  padding: 0.8em
+  font-size: 1.33333em
+  padding: 28px
+  +transition(font-size 0.5s ease)
+  +breakpoint($phone-l)
+    font-size: 1.66666em
+  +breakpoint($tablet-p)
+    font-size: 2em
 
 .about-devdev
   p
