@@ -2,7 +2,7 @@ doctype html
 html lang="en"
   head
     == render "/partials/document_head"
-body data-stellar-background-ratio="1.7"
+body
   == render "/partials/site_header"
   == yield
   == render "/partials/site_navigation", :locals => { :placement => "bottom" }
