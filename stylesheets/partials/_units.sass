@@ -1,6 +1,8 @@
 .unit
   margin: 2em auto
   max-width: 700px
+  background-repeat: no-repeat
+  background-position: 8px top
   p, hgroup
     width: auto
     margin-left: 5em
@@ -13,3 +15,25 @@
     font-size: 0.6666em
     text-transform: uppercase
     margin: 0
+  &.html
+    background-image: url("/images/unit-html.png")
+    +breakpoint($hidpi)
+      background-image: url("/images/unit-html@2x.png")
+  &.css
+    background-image: url("/images/unit-css.png")
+    +breakpoint($hidpi)
+      background-image: url("/images/unit-css@2x.png")
+  &.javascript
+    background-image: url("/images/unit-javascript.png")
+    +breakpoint($hidpi)
+      background-image: url("/images/unit-javascript@2x.png")
+  &.robotics
+    background-image: url("/images/unit-robotics.png")
+    +breakpoint($hidpi)
+      background-image: url("/images/unit-robotics@2x.png")
+  &.design-thinking
+    background-image: url("/images/unit-design-thinking.png")
+    +breakpoint($hidpi)
+      background-image: url("/images/unit-design-thinking@2x.png")
+  +breakpoint($hidpi)
+    background-size: 54px 54px
