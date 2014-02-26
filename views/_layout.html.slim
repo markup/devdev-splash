@@ -37,30 +37,29 @@ body
       var thinking = $("#about-design-thinking");
       // .addTween(target, tween, duration, offset, reverse)
       scrollo.addTween(thinking,
-        TweenMax.from(thinking, 1, 
+        TweenMax.from(thinking, 0.75, 
           {css: {
             opacity: 0,
-            top: 50
+            top: 150
           }
         }),
         0, -560, false
       );
       var apply = $("#apply");
       scrollo.addTween(apply,
-        TweenMax.from(apply, 1, 
+        TweenMax.from(apply, 0.5, 
           {css: {
             opacity: 0.25,
             scale: 0.95,
             transformOrigin: "center top"
-          },
-          onComplete: function() { $("#student-name-first").focus() }
+          }
         }),
-        0, -560, false
+        0, -340, false
       );
       var units = $(".unit").not("#design-thinking");
       for (var i = 0; i < units.length; i ++) {
         scrollo.addTween(units.eq(i),
-          TweenMax.from(units.eq(i), 1, 
+          TweenMax.from(units.eq(i), 0.25, 
             {css: {
               opacity: 0.25,
               scale: 0.95
