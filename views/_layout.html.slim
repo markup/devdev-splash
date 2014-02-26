@@ -48,10 +48,11 @@ body
       var apply = $("#apply");
       // .addTween(target, tween, duration, offset, reverse)
       scrollo.addTween(apply,
-        TweenMax.from(apply, 0.5, 
+        TweenMax.from(apply, 1, 
           {css: {
             opacity: 0,
-            scale: 0.95
+            scale: 0.95,
+            transformOrigin: "center top"
           }
         }),
         0, -800, false
