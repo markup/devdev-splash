@@ -6,7 +6,9 @@
   p, hgroup
     width: auto
     margin-left: 5em
-    margin-right: 4em
+    margin-right: 0
+    +breakpoint($tablet-p)
+      margin-right: 4em
   h3
     color: $complementary-light
     font-size: 1.4em
