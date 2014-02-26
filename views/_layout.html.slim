@@ -57,4 +57,18 @@ body
         }),
         0, -800, false
       );
+      var units = $(".unit").not("#design-thinking");
+      // .addTween(target, tween, duration, offset, reverse)
+      console.debug(units);
+      for (var i = 0; i < units.length; i ++) {
+        scrollo.addTween(units.eq(i),
+          TweenMax.from(units.eq(i), 1, 
+            {css: {
+              opacity: 0,
+              scale: 0.95
+            }
+          }),
+          0, -800, false
+        );
+      }
     });
