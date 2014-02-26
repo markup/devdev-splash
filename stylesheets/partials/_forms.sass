@@ -6,13 +6,37 @@
   margin: 0 auto
   font-size: 14px
 
+.contact-form
+  max-width: 480px
+  font-size: 22px
+  margin: 0 auto
+  input[type="text"], input[type="email"], textarea
+    border: none
+    border-radius: 2px
+    padding: 0.8em 0.8em 0.7em
+    margin: 0.4em 0 0
+    width: 100%
+    display: block
+    box-sizing: border-box
+    color: $complementary-dark
+    background-color: $background
+    &:focus
+      outline: none
+      background-color: #fff
+  textarea
+    height: 10em
+  label
+    display: block
+    margin: 1em 0 0
+    padding-left: 0.4em
+
 input[type="radio"]
   margin: 0 0.3em 0 1.2em
 
 div, input, textarea
-  +transition(background-color 0.5s ease)
+  +transition(background-color 0.5s ease, border-color 0.5s ease)
   &:hover
-    +transition(background-color 0.2s ease)
+    +transition(background-color 0.2s ease, border-color 0.2s ease)
 
 .ui-helper-hidden-accessible
   display: none
