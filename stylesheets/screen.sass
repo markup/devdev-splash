@@ -1,6 +1,7 @@
 @import "compass/css3/border-radius"
 @import "compass/css3/transition"
 @import "compass/utilities/general/clearfix"
+@import "compass/css3/box-sizing"
 @import "breakpoint"
 @import "modules/all"
 
@@ -12,7 +13,7 @@
 body
   background-image: url("/images/background-gradient-pixelated.png")
   background-repeat: repeat-x
-  background-position: center -186px
+  background-position: center top
 
 section
   position: relative
@@ -20,7 +21,7 @@ section
 
 .hexagon
   background-position: center -11px
-  // background-attachment: fixed
+  background-attachment: fixed
   padding: 59px 7.5%
   color: #fff
   &.complementary
